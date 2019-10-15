@@ -17,7 +17,7 @@ public class ClasePrueba {
 	
 	@Test
 	public void testSumaError() {
-		int suma = 3 + 3;
+		int suma = 3 + 30;
 		
 		Assert.assertEquals(5, suma);
 		
