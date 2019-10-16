@@ -65,17 +65,7 @@ public class HeroController {
 		return hero.get();
 	}
 	
-	@GetMapping(value = "consultar/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value = "Consultar heroe por id", response = Page.class)
-    @ApiResponses(value = {
-            @ApiResponse(code = 200, message = "Heroe encontrado", response = Hero.class),
-            @ApiResponse(code = 400, message = "La petición es invalida"),
-            @ApiResponse(code = 404, message = "Recurso no encontrado"),
-            @ApiResponse(code = 500, message = "Error interno al procesar la respuesta")})
-	public ResponseEntity<Hero> getHero( @PathVariable("id") int id){
-		 log.debug("REST request getHero id : {}", id);
-		return ResponseEntity.ok(heroService.getHero(id));
-	}
+	
 	
 	
 	@RequestMapping(value = "borrar", method=RequestMethod.DELETE)
