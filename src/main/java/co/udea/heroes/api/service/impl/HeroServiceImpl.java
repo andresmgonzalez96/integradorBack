@@ -34,6 +34,14 @@ public class HeroServiceImpl implements HeroService {
 		return heroes;
 	}
 	
+
+//	public List<Hero> getHeroes1() {
+//		log.debug("Inicio getHeroes");
+//		List<Hero> heroes= heroRepository.findAll();
+//		log.debug("Fin getHeroes");
+//		return heroes;
+//	}
+	
 	@Override
 	public Hero getHero(int id) {
 		log.debug("Inicio getHero: id = {}", id);
