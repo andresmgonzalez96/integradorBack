@@ -18,14 +18,6 @@ public class ClasePrueba {
 		Assert.assertEquals(5, suma);
 		
 	}
-	
-	@Test
-	public void testSumaError() {
-		int suma = 3 + 30;
-		
-		Assert.assertEquals(5, suma);
-		
-	}
-	
+
 
 }
